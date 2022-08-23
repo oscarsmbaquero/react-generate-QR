@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
     <header className='header'>
-      <h3>Convierte tu url en qr</h3>
+      <h3>Convierte tu url en QR</h3>
       <form onSubmit={generateCode}>
         <input
           type='text'
