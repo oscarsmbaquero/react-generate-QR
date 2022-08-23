@@ -41,12 +41,17 @@ function App() {
         <button type='submit'>Generar Código</button>
       </form>
       {qr ? (
-        <div>
-        <br/>
-            <img src={qr} alt='imagen qr'/>
-        <br/>
-        <a href={qr} download='codeQR.png' style={{color:'black'}}> Descargar </a>
-      </div>
+        <>
+          <div>
+              <br/>
+                  <img src={qr} alt='imagen qr'/>
+              <br/>
+          </div>
+          <div className='descarga'>
+          
+              <a href={qr} download='codeQR.png'  className='descargar'> Descargar </a>
+          </div>
+        </>
       )
       :''
       }
